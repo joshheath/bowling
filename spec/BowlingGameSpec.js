@@ -16,4 +16,13 @@ var bowling = new Bowling();
     expect(bowling.scorecard).toEqual([0,0])
   });
 
+  it('begins each frame on the first roll', function(){
+    expect(bowling.isFirstRoll()).toBe(true);
+  });
+
+  it('can progress onto the second roll of the frame', function(){
+    bowling.nextRoll();
+    expect(bowling.isFirstRoll()).toBe(false);
+  });
+
 });
