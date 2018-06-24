@@ -7,5 +7,9 @@ var bowling = new Bowling();
     expect(bowling.currentFrame).toEqual(1)
   })
 
+  it('can progress to the next frame', function(){
+    bowling.nextFrame();
+    expect(bowling.currentFrame).toEqual(2);
+  });
 
 });
