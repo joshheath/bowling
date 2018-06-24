@@ -1,3 +1,11 @@
-'use strict';
+// 'use strict';
+describe("TenpinBowlingGame", function() {
 
-var BowlingGame = require('..src/BowlingGame.js');
+var bowling = new Bowling();
+
+  it('starts the game at frame 1', function() {
+    expect(bowling.currentFrame).toEqual(1)
+  })
+
+
+});
